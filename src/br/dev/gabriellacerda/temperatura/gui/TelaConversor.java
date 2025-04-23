@@ -18,25 +18,33 @@ public class TelaConversor {
 	public void criarTelaConversor() {
 		
 		JFrame tela = new JFrame();
-		tela.setSize(400, 400);
+		tela.setSize(360, 400);
 		tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		tela.setResizable(false);
 		tela.setLayout(null);
+		tela.setTitle("Conversor de Temperatura");
 		
 		Container container = tela.getContentPane();
+		
+		textCelsius = new JTextField();
+		textCelsius.setBounds(50, 70, 250, 25);
 		
 		labelCelsius = new JLabel();
 		labelCelsius.setText("Temperatura em graus celsius:");
 		labelCelsius.setBounds(50, 40, 200, 30);
 		
-		textCelsius = new JTextField();
-		textCelsius.setBounds(45, 70, 300, 25);
+		buttonKelvin = new JButton();
+		buttonKelvin.setText("Kelvin");
+		buttonKelvin.setBounds(50, 100, 120, 30);
 		
-		
-		
+		buttonFahreinheit = new JButton();
+		buttonFahreinheit.setText("Fahreinheit");
+		buttonFahreinheit.setBounds(180, 100, 120, 30);
 		
 		container.add(labelCelsius);
 		container.add(textCelsius);
+		container.add(buttonKelvin);
+		container.add(buttonFahreinheit);
 		
 		tela.setVisible(true);
 	}
