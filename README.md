@@ -1,6 +1,6 @@
 # CONVERSOR DE TEMPERATURA
 
-![](.img/preview.png)
+![](./img/preview.png)
 
 Conversor de temperatura de Celsius para formato
 Kelvin ou Fahreinheit.
